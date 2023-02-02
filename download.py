@@ -1,6 +1,6 @@
 # In this file, we define download_model
 # It runs during container build time to get model weights built into the container
-import os
+import os, torch
 from diffusers import StableDiffusionPipeline
 from diffusers.models import AutoencoderKL
 from diffusers import (
